@@ -12,9 +12,11 @@ var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
 
 
 module.exports = {
+    // 配置webpack编译入口
     entry: {
         app: './src/main.js'
     },
+  // 配置webpack输出路径和命名规则
     output: {
         path: config.build.assetsRoot,
         publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
